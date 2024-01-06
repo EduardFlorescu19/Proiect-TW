@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello-like Task Manager</title>
+    <link rel="stylesheet" href="assets/css/tasks.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column" id="todo-column">
+            <h2 class="column-title">OPEN</h2>
+            <button class="add-task-button">Add Task</button>
+            <div class="task-list" id="todo-list">
+                <!-- Task items for "To Do" will be added here -->
+            </div>
+        </div>
+
+        <div class="column" id="in-progress-column">
+            <h2 class="column-title">PENDING</h2>
+            <div class="task-list" id="in-progress-list">
+                <!-- Task items for "In Progress" will be added here -->
+            </div>
+        </div>
+
+        <div class="column" id="completed-column">
+            <h2 class="column-title">COMPLETED</h2>
+            <div class="task-list" id="completed-list">
+                <!-- Task items for "Completed" will be added here -->
+            </div>
+        </div>
+
+        <div class="column" id="closed-column">
+            <h2 class="column-title">CLOSED</h2>
+            <div class="task-list" id="closed-list">
+                <!-- Task items for "Closed" will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/tasks.js"></script>
+</body>
+</html>
